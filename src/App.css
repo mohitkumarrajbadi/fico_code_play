@@ -71,3 +71,26 @@ body{
   color: #ffffff;
   font-family: monospace;
 }
+
+.navbar-list{
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.navbar-item{
+  padding: 5px 10px;
+}
+
+.navbar-item:hover{
+   background-color: #4d5056;
+   border-radius: 6px;
+   padding: 5px 10px;
+}
