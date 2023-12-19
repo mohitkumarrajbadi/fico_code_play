@@ -1,19 +1,42 @@
-import React from 'react'
-import LeftTextArea from './components/leftTextArea'
-import RightTextArea from './components/rightTextArea'
-import ButtonsContainer from './components/buttonsContainer'
-import Footer from './components/footer'
+import React, { useEffect } from 'react'
 import './App.css';
-import './components/scripts/formatter'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+import ConverterHome from './components/pages/converterHome';
+import Header from './components/header';
+import Footer from './components/footer';
+import PrettifyHome from './components/pages/prettifyHome';
+import ViewerHome from './components/pages/viewerHome';
 
 const App = () => {
   return (
     <>
-      <div className='container'>
-        <LeftTextArea />
-        <ButtonsContainer />
-        <RightTextArea />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<PrettifyHome />}
+            ></Route>
+            <Route
+              exact
+              path="/converterHome"
+              element={<ConverterHome />}
+            ></Route>
+            <Route
+              exact
+              path="/viewerHome"
+              element={<ViewerHome/>}
+            ></Route>
+          </Routes>
+        </div>
+      </Router>
       <Footer />
     </>
   )

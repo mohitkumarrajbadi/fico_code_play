@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LeftTextArea = () => {
+const LeftTextArea = ({placeholderValue,defaultValue}) => {
   return (
     <textarea
     className="large-area large-area--input"
@@ -8,8 +8,8 @@ const LeftTextArea = () => {
     id="leftTextArea"
     cols="30"
     rows="10"
-    placeholder="Enter your JSON ...."
-    defaultValue={JSON.stringify({ name: "mohit" })}
+    placeholder={placeholderValue}
+    defaultValue={defaultValue}
   ></textarea>  
   )
 }
