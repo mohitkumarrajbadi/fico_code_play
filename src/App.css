@@ -13,7 +13,7 @@ body {
   gap: 20px;
 }
 
-.large-area {
+.large-area , ._11RoI{
   height: 100%;
   padding: 20px;
   box-sizing: border-box;

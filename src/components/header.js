@@ -10,9 +10,9 @@ const Header = () => {
   return (
     <div>
         <ul className='navbar-list'>
-            <li className='navbar-item'><Link to="/">JSON Beutify</Link></li>
-            <li className='navbar-item'><Link to="/converterHome">XML JSON Converter</Link></li>
-            <li className='navbar-item'><Link to="/contact">Contacts Test</Link></li>
+            <li className='navbar-item'><Link to="/" >Prettify</Link></li>
+            <li className='navbar-item'><Link to="/converterHome">Converter</Link></li>
+            <li className='navbar-item'><Link to="/viewerHome">Viewer</Link></li>
         </ul>
     </div>
   )

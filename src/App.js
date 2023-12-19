@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import './App.css';
-import JSONFormatHome from './components/pages/jsonFormatHome'
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,6 +9,8 @@ import {
 import ConverterHome from './components/pages/converterHome';
 import Header from './components/header';
 import Footer from './components/footer';
+import PrettifyHome from './components/pages/prettifyHome';
+import ViewerHome from './components/pages/viewerHome';
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
             <Route
               exact
               path="/"
-              element={<JSONFormatHome />}
+              element={<PrettifyHome />}
             ></Route>
             <Route
               exact
@@ -30,8 +31,8 @@ const App = () => {
             ></Route>
             <Route
               exact
-              path="/contact"
-              element={<JSONFormatHome />}
+              path="/viewerHome"
+              element={<ViewerHome/>}
             ></Route>
           </Routes>
         </div>
